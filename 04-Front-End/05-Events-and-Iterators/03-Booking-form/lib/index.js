@@ -18,8 +18,9 @@ const incrementCounter = () => {
 };
 
 const updateForm = () => {
-  priceInput.value = Number.parseInt(counter.innerText, 10)  * unitPriceCents;
-  console.log(priceInput.value);
+  priceInput.value = Number.parseInt(counter.innerText, 10) * unitPriceCents;
+  submit.value = `Pay ${priceInput.value / 100}€`;
+  console.log(submit.value);
 };
 
 
