@@ -21,8 +21,16 @@
   </head>
 
   <body>
-    <div class="container p-5">
+
+    <div class="container d-flex p-5 justify-content-center">
       <!-- TODO: Create your input here -->
+      <div class="input-group w-50" data-controller="copy-to-clipboard" data-copy-to-clipboard-feedback-text-value="Copied!">
+        <input class="form-control" type="text" value="0628aea3-48f6-4183-80be-c5def07939f2" data-copy-to-clipboard-target="input" readonly>
+        <div class="input-group-append">
+          <button class="btn btn-outline-primary" id="copy-button" data-action="click->copy-to-clipboard#copy">Copy to Clipboard</button>
+        </div>
+      </div>
+
     </div>
 
     <script src="lib/index.js" type="module"></script>

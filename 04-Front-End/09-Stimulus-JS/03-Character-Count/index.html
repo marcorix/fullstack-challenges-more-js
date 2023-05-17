@@ -23,6 +23,15 @@
   <body>
     <div class="container p-5">
       <!-- TODO: Code here -->
+      <div data-controller="character-count" data-character-count-limit-value="30">
+
+        <textarea placeholder="Type something"
+                  rows="3"
+                  class="form-control mb-2"
+                  data-action="keyup->character-count#updateCounter"
+                  ></textarea>
+        <div data-character-count-target="counter"></div>
+      </div>
     </div>
 
     <script src="lib/index.js" type="module"></script>
